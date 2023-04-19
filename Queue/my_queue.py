@@ -40,7 +40,7 @@ class Queue:
         return first_node.data
 
     def peek(self):
-        if self.head is None:
+        if self.is_empty():
             raise Exception('Queue is empty')
 
         return self.head.data
